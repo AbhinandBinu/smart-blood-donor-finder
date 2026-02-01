@@ -1,6 +1,5 @@
 # 🩸 Smart Blood Donor Finder System
 
-A Python-based web application developed as the **main project for the Python module** in my **PG Diploma in ROS 2** from **iHub School of Learning**.
 
 The project focuses on creating a **socially relevant, privacy-aware blood donor management system** where donors are verified by an admin before being made visible to patients or hospitals.
 
@@ -38,4 +37,51 @@ This project evolved based on **Stage-1 review feedback**, where mentors advised
 ---
 
 ## 📂 Project Structure
+smart-blood-donor-finder/
+│
+├── app.py # Main Flask application
+├── donor.py # Donor data model (OOP)
+├── database.py # JSON-based database handler
+├── finder.py # Donor search logic
+├── donors.json # Stored donor data (auto-created)
+│
+├── templates/
+│ ├── base.html
+│ ├── index.html
+│ ├── add.html
+│ ├── search.html
+│ ├── admin.html
+│ └── admin_login.html
+│
+├── static/
+│ ├── style.css
+│ └── uploads/ # Uploaded medical certificates
+│
+└── README.md
+
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/smart-blood-donor-finder.git
+cd smart-blood-donor-finder
+
+Install Required Package
+pip install flask
+
+3️⃣ Run the Application
+python app.py
+
+
+The web application will open automatically in your browser.
+
+🔐 Admin Login Details (For Demo)
+Username: admin
+Password: admin123
+
+
+⚠️ These credentials are hardcoded for academic/demo purposes only.
 
