@@ -1,0 +1,38 @@
+[
+    {
+        "id": "7f40dee6-8992-4fea-82d8-d92bbc48f1d8",
+        "name": "Abhinand Binu",
+        "blood_group": "B+",
+        "location": "trivandrum",
+        "phone": "07306659648",
+        "certificate": "static/uploads\\28_Abhinand_Binu[1].pptx",
+        "status": "approved"
+    },
+    {
+        "id": "9fff48a8-b8e5-4a1e-8258-52a24ebeb49c",
+        "name": "Ashtami Binu",
+        "blood_group": "B+",
+        "location": "trivandrum",
+        "phone": "8089439196",
+        "certificate": "static/uploads\\28_Abhinand_Binu[1].pptx",
+        "status": "approved"
+    },
+    {
+        "id": "1f711fd8-b7f0-4e55-af23-0bcfa5369634",
+        "name": "manav ",
+        "blood_group": "O+",
+        "location": "kottayam",
+        "phone": "65645468",
+        "certificate": "static/uploads\\aadhar.pdf",
+        "status": "approved"
+    },
+    {
+        "id": "a5be71d7-de11-4e3f-8961-d4a91100ae2e",
+        "name": "varsha",
+        "blood_group": "O+",
+        "location": "ernakulam",
+        "phone": "65645468",
+        "certificate": "static/uploads\\aadhar - Copy.pdf",
+        "status": "approved"
+    }
+]

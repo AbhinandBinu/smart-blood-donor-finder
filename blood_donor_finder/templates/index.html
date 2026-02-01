@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+    <h2 class="floating-text">Donate Blood, Save Lives ❤️</h2>
+    <p class="fade-text">
+        A single blood donation can save up to three lives.
+        Your small step can make a big difference.
+    </p>
+</div>
+
+<div class="info-cards">
+
+    <div class="card floating-card">
+        <h3>Why Donate Blood?</h3>
+        <ul>
+            <li>🩸 Saves lives</li>
+            <li>❤️ Improves heart health</li>
+            <li>🧬 Boosts blood cell production</li>
+            <li>🩺 Free health check</li>
+        </ul>
+    </div>
+
+    <div class="card floating-card delay">
+        <h3>Who Cannot Donate?</h3>
+        <ul>
+            <li>❌ Severe anemia</li>
+            <li>❌ Infectious diseases</li>
+            <li>❌ Pregnant women</li>
+            <li>❌ Recent surgery/tattoo</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="count-box pulse">
+    <h3>Approved Donors Available</h3>
+    <p>{{ count }}</p>
+</div>
+
+{% endblock %}

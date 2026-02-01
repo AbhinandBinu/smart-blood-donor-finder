@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="floating-text">Become a Blood Donor ❤️</h2>
+
+<p class="fade-text" style="text-align:center;">
+    Your contribution can save lives. Please provide accurate details.
+</p>
+
+<div class="card add-donor-card floating-card">
+
+<form method="post" enctype="multipart/form-data">
+
+    <label>Full Name</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <label>Blood Group</label>
+    <select name="blood_group" required>
+        <option value="">-- Select Blood Group --</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+    </select>
+
+    <label>Location</label>
+    <input type="text" name="location" placeholder="City / District" required>
+
+    <label>Contact Number</label>
+    <input type="text" name="phone" placeholder="Mobile number" required>
+
+    <label>Medical Certificate (PDF / Image)</label>
+    <input type="file" name="certificate" required>
+    <div class="consent-box">
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">
+        I voluntarily consent to share my contact details with hospitals or patients
+        for emergency blood donation purposes.
+    </label>
+</div>
+
+    <button class="primary-btn">Submit for Approval</button>
+
+</form>
+
+</div>
+
+
+{% endblock %}

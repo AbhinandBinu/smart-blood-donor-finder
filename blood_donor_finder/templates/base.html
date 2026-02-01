@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Blood Donor Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="blood-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+
+<header style="background:#c62828; color:white; padding:15px;">
+    <h1>Smart Blood Donor Finder</h1>
+    <nav class="nav-bar">
+    <a href="/" class="nav-item">Home</a>
+    <a href="/add" class="nav-item">Add Donor</a>
+    <a href="/search" class="nav-item">Search</a>
+    <a href="/admin" class="nav-item admin">Admin</a>
+    </nav>
+</header>
+
+<div style="padding:20px;">
+    {% block content %}{% endblock %}
+</div>
+
+<footer style="text-align:center; padding:10px; background:#eee;">
+    <p>© Smart Blood Donor Finder</p>
+</footer>
+
+</body>
+</html>

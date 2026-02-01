@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Admin Dashboard</h2>
+
+<div class="dashboard">
+    <div class="dash-card">
+        <h3>Pending Donors</h3>
+        <p>{{ donors | length }}</p>
+    </div>
+
+    <div style="text-align:right;">
+        <a href="{{ url_for('logout') }}">
+            <button class="primary-btn">Logout</button>
+        </a>
+    </div>
+</div>
+
+{% if donors %}
+    {% for d in donors %}
+    <div class="card">
+
+        <p>
+            <strong>{{ d.name }}</strong><br>
+            Blood Group: {{ d.blood_group }}<br>
+            Location: {{ d.location }}
+        </p>
+
+        <!-- ✅ APPROVE FORM (USES donor_id) -->
+        <form method="post" style="display:inline;">
+            <input type="hidden" name="donor_id" value="{{ d.id }}">
+            <button class="primary-btn">Approve</button>
+        </form>
+
+        <!-- ✅ CERTIFICATE DOWNLOAD -->
+        <a href="{{ url_for('download_certificate', filepath=d.certificate) }}">
+            <button>Download Certificate</button>
+        </a>
+
+    </div>
+    {% endfor %}
+{% else %}
+    <p>No pending donors.</p>
+{% endif %}
+
+{% endblock %}
